@@ -1,4 +1,4 @@
-# Cover-Letter-Screening
+# Cover Letter Screening
 This repository contains a Python code for screening a candidate's cover letter using sentiment analysis.
 
 ## Requirements
@@ -7,11 +7,13 @@ This repository contains a Python code for screening a candidate's cover letter 
 
 ## Libraries
 
+* [pandas](https://pandas.pydata.org/)
+* [hvplot](https://hvplot.holoviz.org/)
 * [PyPDF2](https://pypi.org/project/PyPDF2/)
 * [textract](https://pypi.org/project/textract/)
 * [re](https://docs.python.org/3/library/re.html#)
 * [string](https://docs.python.org/2/library/strings.html)
-* [pandas](https://pandas.pydata.org/)
+* [https://www.nltk.org/](https://www.nltk.org/)
 
 ## Outcome
 
