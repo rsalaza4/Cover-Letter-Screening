@@ -19,7 +19,7 @@ This repository contains a Python code for screening a candidate's cover letter 
 
 Bar chart with the sentiment scores of the candidate's cover letter.
 
-![alt text]()
+![alt text](https://github.com/rsalaza4/Cover-Letter-Screening/blob/main/Images/cover_letter_scores.png)
 
 ## Technical Article
 
