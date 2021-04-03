@@ -13,7 +13,7 @@ This repository contains a Python code for screening a candidate's cover letter 
 * [textract](https://pypi.org/project/textract/)
 * [re](https://docs.python.org/3/library/re.html#)
 * [string](https://docs.python.org/2/library/strings.html)
-* [https://www.nltk.org/](https://www.nltk.org/)
+* [nltk](https://www.nltk.org/)
 
 ## Outcome
 
