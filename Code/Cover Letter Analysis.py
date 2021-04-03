@@ -5,7 +5,10 @@ import PyPDF2
 import textract
 import re
 import string
+from string import punctuation
 import nltk
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 %matplotlib inline
 
@@ -31,17 +34,23 @@ while count < num_pages:
     count +=1
     text += pageObj.extractText()
     
-# Convert all strings to lowercase
-text = text.lower()
+# Create a list of the words
+words = word_tokenize(text)
 
-# Remove numbers
-text = re.sub(r'\d+','',text)
+# Convert the words to lowercase
+words = [word.lower() for word in words]
 
-# Remove punctuation
-text = text.translate(str.maketrans('','',string.punctuation))
+# Remove the punctuation
+words = [word for word in words if word not in punctuation]
 
-# Remove row jumps
-text = text.replace('\n','')
+# Create a list of stopwords
+stop = stopwords.words('english')
+
+# Remove the stopwords
+words = [word for word in words if word not in stop]
+
+# Join tokens back into a single string
+text = (" ").join(words)
 
 # Download VADER Lexicon
 nltk.download('vader_lexicon')
