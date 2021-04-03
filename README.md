@@ -23,7 +23,7 @@ Bar chart with the sentiment scores of the candidate's cover letter.
 
 ## Technical Article
 
-* [Medium]()
+* [Medium](https://robertosalazarr.medium.com/cover-letter-screening-with-python-313adb35e34c)
 
 ---
 
